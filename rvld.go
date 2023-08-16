@@ -12,5 +12,5 @@ func main(){
 	filename := os.Args[1]
 	content, err := os.ReadFile(filename)
 	utils.MustNoErr(err)
-	println("content: %b", content[:10])
+	println("content: %s", content[:10])
 }
